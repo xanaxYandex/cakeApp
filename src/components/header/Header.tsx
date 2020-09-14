@@ -3,7 +3,7 @@ import './Header.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faWhatsapp, faFacebookMessenger} from "@fortawesome/free-brands-svg-icons";
 import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
-
+import ScrollIntoView from 'react-scroll-into-view';
 
 
 interface HeaderState {
@@ -21,6 +21,7 @@ class Header extends React.Component<any, HeaderState> {
 		};
 		this.onDropdownBtnClick = this.onDropdownBtnClick.bind(this);
 		this.onScroll = this.onScroll.bind(this);
+		this.onRefScroll = this.onRefScroll.bind(this);
 	}
 
 	public componentDidMount(): void {
@@ -33,6 +34,10 @@ class Header extends React.Component<any, HeaderState> {
 
 	public onScroll(event: any): void {
 		this.setState((state, props) => ({scrollPosition: window.scrollY}))
+	}
+
+	public onRefScroll(ref: string): void {
+		console.log(ref)
 	}
 
 	public onDropdownBtnClick(e: any): void {
@@ -50,12 +55,24 @@ class Header extends React.Component<any, HeaderState> {
 				</div>
 				<div className="header__menu">
 					<ul className="header__menu__container">
-						<li className="header__menu__item">Portfolio</li>
-						<li className="header__menu__item">We Are</li>
-						<li className="header__menu__item">We Provide</li>
-						<li className="header__menu__item">We Do</li>
-						<li className="header__menu__item">Why Us</li>
-						<li className="header__menu__item">Get in Touch</li>
+						<ScrollIntoView selector="#porfolio" smooth={true}>
+							<li className="header__menu__item">Portfolio</li>
+						</ScrollIntoView>
+						<ScrollIntoView selector="#we-are">
+							<li className="header__menu__item">We Are</li>
+						</ScrollIntoView>
+						<ScrollIntoView selector="#we-provide">
+							<li className="header__menu__item">We Provide</li>
+						</ScrollIntoView>
+						<ScrollIntoView selector="#we-do">
+							<li className="header__menu__item">We Do</li>
+						</ScrollIntoView>
+						<ScrollIntoView selector="#why-us">
+							<li className="header__menu__item">Why Us</li>
+						</ScrollIntoView>
+						<ScrollIntoView selector="#get-in-touch">
+							<li className="header__menu__item">Get in Touch</li>
+						</ScrollIntoView>
 					</ul>
 				</div>
 				<div className="header__social-networks">

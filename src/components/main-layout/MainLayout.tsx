@@ -61,9 +61,9 @@ class MainLayout extends React.Component<{ cakes: Cake[] }> {
 					{/*</svg>*/}
 				</div>
 
-				<div className="main-layout__divider" style={{background: '#fff', height: '2px'}}></div>
+				<div className="main-layout__divider" id="we-are"></div>
 
-				<div className="main-layout__we-are">
+				<div className="main-layout__we-are" >
 
 					<h1 className="main-layout__we-are_title">We are</h1>
 					<div className="main-layout__we-are__container">
@@ -83,19 +83,22 @@ class MainLayout extends React.Component<{ cakes: Cake[] }> {
 					</div>
 				</div>
 
-				<div className="main-layout__divider"></div>
+				<div className="main-layout__divider" id="we-provide"></div>
 
 				<div className="main-layout__we-provide">
 					<h1 className="main-layout__we-provide_title">We provide</h1>
 					<div className="main-layout__we-provide__container">
-						<p>Me - I'm the maker of all cakes that you see;
-							My husband - he does the technical support (website) and doing the deliveries;
-							My daughters - 2.5 and 5.5 years old kids, they are the best critics of any happy
-							birthday cake I made.</p>
+						<div className="main-layout__we-are__text">
+							<p>Me - I'm the maker of all cakes that you see;
+								My husband - he does the technical support (website) and doing the deliveries;
+								My daughters - 2.5 and 5.5 years old kids, they are the best critics of any happy
+								birthday cake I made.</p>
+						</div>
+
 					</div>
 				</div>
 
-				<div className="main-layout__divider"></div>
+				<div className="main-layout__divider" id="we-do"></div>
 
 				<div className="main-layout__we-do">
 

@@ -43,11 +43,14 @@
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
 }
+.main-layout__portfolio__text, .main-layout__we-are__text, .main-layout__we-provide__text {
+  font-family: "Montserrat", sans-serif;
+}
 .main-layout__divider {
   width: 100%;
   height: 1px;
   background: rgba(53, 53, 53, 0.7);
-  margin: 80px 0;
+  margin: 40px 0 120px 0;
 }
 .main-layout__portfolio {
   display: flex;
