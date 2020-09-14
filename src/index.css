@@ -17,4 +17,11 @@ code {
   left: 0;
 }
 
+.svg-2 {
+  z-index: -1;
+  position: absolute;
+  top: 1300px;
+  left: 0;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -44,8 +44,9 @@ class Header extends React.Component<any, HeaderState> {
 			<div className={'header ' + (this.state.scrollPosition > 50 ? 'pinned' : '') }>
 				<div className="header__logo">
 					<span className="header__text">
-						Cream Paradise
+						Cream
 					</span>
+					<span className="header__text">Paradise</span>
 				</div>
 				<div className="header__menu">
 					<ul className="header__menu__container">

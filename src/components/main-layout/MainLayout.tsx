@@ -64,6 +64,7 @@ class MainLayout extends React.Component<{ cakes: Cake[] }> {
 				<div className="main-layout__divider" style={{background: '#fff', height: '2px'}}></div>
 
 				<div className="main-layout__we-are">
+
 					<h1 className="main-layout__we-are_title">We are</h1>
 					<div className="main-layout__we-are__container">
 						<div className="main-layout__we-are__text">

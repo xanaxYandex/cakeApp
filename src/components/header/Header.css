@@ -1,7 +1,7 @@
 .pinned {
   transition: 0.3s;
-  background: white;
-  box-shadow: 0 5px 20px white;
+  background: #ffe4c4;
+  box-shadow: 0 5px 20px #ffe4c4;
 }
 
 .header {
@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
-  padding: 25px;
+  padding: 10px;
   margin-bottom: 40px;
   position: sticky;
   top: 0;
@@ -51,10 +51,17 @@
   }
 }
 .header__logo {
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-column-start: 1;
 }
-.header__text {
+.header__logo:hover {
   transition: 0.2s;
+  filter: drop-shadow(0 0 5px rgba(128, 128, 128, 0.77));
+}
+.header__text {
   cursor: pointer;
   white-space: nowrap;
   font-family: "Permanent Marker", cursive;
@@ -73,10 +80,6 @@
   .header__text {
     font-size: 28px;
   }
-}
-.header__text:hover {
-  transition: 0.2s;
-  filter: drop-shadow(0 0 5px rgba(128, 128, 128, 0.77));
 }
 .header__menu {
   grid-column-start: 2;

@@ -37,6 +37,12 @@ class App extends React.Component<any, AppState> {
 					<path fill="#d1c3e0" d="M 800 460 L 800 220 C 800 80 380 300 380 160 Q 400 40 480 0 L 180 0 C 60 0 140 180 0 220 L 0 540 C 560 540 400 440 800 460 ">
 					</path>
 				</svg>
+
+				<svg className="svg-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+					<path fill="#d1c3e0" d="M 0 340 L 0 120 C 560 160 400 20 800 40 L 800 480 Q 680 580 560 500 L 360 380 C 180 260 280 580 120 440 L 0 340 ">
+					</path>
+				</svg>
+
 				<Header/>
 				<Router>
 					<Switch>
